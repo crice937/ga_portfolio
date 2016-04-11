@@ -1,0 +1,11 @@
+
+body {
+	background-color: #CFD8DC;
+}
+
+#mapPlaceholder {
+	background-image: url("../images/header_bg.png");
+	background-size: cover;
+	width: 67%;
+	margin: 0 auto;
+}
