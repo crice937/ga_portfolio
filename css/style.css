@@ -2,11 +2,22 @@
 body {
 	background-color: #CFD8DC;
 	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	position: relative;
+	z-index: -2;
+}
+
+h1 {
+	text-align: center;
+	margin-top: -200px;
+	position: relative left: -50%;
+	z-index: 3;
 }
 
 #mapHeader {
 	min-height: 400px;
 	margin: 0 auto;
 	width: 80%;
-	position: relative;
+	position: absolute left 50%;
+	z-index: -1;
 }
