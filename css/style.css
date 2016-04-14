@@ -1,4 +1,6 @@
 
+/* Basic Styles */
+
 body {
 	background-color: #CFD8DC;
 	font-family: 'Roboto', sans-serif;
@@ -9,15 +11,53 @@ body {
 
 h1 {
 	text-align: center;
-	margin-top: -200px;
+	/*margin-top: -200px;*/
 	position: relative left: -50%;
 	z-index: 3;
 }
 
 #mapHeader {
 	min-height: 400px;
+	/*transition: height 1s;*/
 	margin: 0 auto;
 	width: 80%;
 	position: absolute left 50%;
 	z-index: -1;
+}
+
+#protein {
+	margin: 0 auto;
+	width: 80%;
+}
+
+/* D3 Styles */
+
+.link {
+	fill: none;
+	stroke: #666;
+	stroke-width: 1.5px;
+}
+
+#licensing {
+	fill: green;
+}
+
+.link.licensing {
+	stroke: green;
+}
+
+.link.resolved {
+	stroke-dasharray: 0,2 1;
+}
+
+circle {
+	fill: #ccc;
+	stroke: #333;
+	stroke-width: 1.5px;
+}
+
+text {
+	font: 10px sans-serif;
+	pointer-events: none;
+	text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
 }
