@@ -1,8 +1,30 @@
 
 L.mapbox.accessToken = 'pk.eyJ1IjoiY3JpY2U5MzciLCJhIjoiZjhmNmY3NzFiN2ZmODExZmVlMWYyMGZlZWMzNzE1ZDcifQ.3435dWIDUWFnAa6oicXfRQ';
 
-var headMap = L.mapbox.map('mapHeader', 'mapbox.streets', {
-  zoomControl: false
+function randMap () {
+
+	var genRand = Math.random();
+
+	if (genRand <= .2) {
+		return 'mapbox.streets';
+	}
+	if (genRand <= .4 && genRand > .2) {
+		return 'mapbox.light';
+	}
+	if (genRand <= .6 && genRand > .4) {
+		return 'mapbox.dark';
+	}
+	if (genRand <= .8 && genRand > .6) {
+		return 'mapbox.emerald';
+	}
+	else
+		return 'mapbox.satellite';
+
+}
+
+var headMap = L.mapbox.map('mapHeader', randMap(), {
+	zoomControl: false
 }).setView([41.0252, 28.9950], 11);
 
-headMap.scrollWheelZoom.disable();
+	//disable scroll wheel
+	headMap.scrollWheelZoom.disable();

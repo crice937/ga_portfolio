@@ -2,19 +2,22 @@
 /* Basic Styles */
 
 body {
-	background-color: #CFD8DC;
+	background-color: #ECEFF1;
 	font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-	text-align: center;
-	/*margin-top: -200px;*/
-	position: relative left: -50%;
-	z-index: 3;
+#containerBg {
+	background-color: #CFD8DC;
+	width: 80%;
 }
 
-#containerBg {
-	background-color: #263238;
+.formContainerBg {
+	margin: 5% 35%;
+	width: 80%;
+}
+
+.jumbotronBg {
+	background-color: #455A64;
 }
 
 #mapHeader {
@@ -25,6 +28,7 @@ h1 {
 	z-index: 0;
 }
 
+
 #protein {
 	margin: 0 auto;
 	width: 80%;
@@ -34,21 +38,40 @@ h1 {
 	margin-top: 5%;
 }
 
+#removeMarginPadding {
+	margin: 0;
+	padding: 0;
+}
+
 .info {
-  color: #FFF;
-  text-align: center;
-  width: 100%;
-  height: 80px;
-  position: absolute;
-  top: -400px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+	z-index: 400;
+	top: 40%;
+	margin: 0;
+	color: #FFF;
+	text-align: center;
+	width: 100%;
+	height: 80px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#mc_embed_signup {
+ 
+}
+
+.info h1 {
+	font-size: 72px;
+}
+
+.info h2 {
+	line-height: 100px;
+	font-size: 64px;
 }
 
 .shadow1 {
-  text-shadow: 0px 0px 1px #000;
+	text-shadow: 0px 0px 1px #000;
 }
 
 /* D3 Styles */
