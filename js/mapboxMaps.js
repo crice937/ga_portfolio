@@ -6,6 +6,9 @@ function randMap () {
 	var genRand = Math.random();
 
 	if (genRand <= .2) {
+		$(".jumbotronBg").css("background-color", "#DCEDC8");
+		$(".info").css("color", "#263238");
+		$(".shadow").css("textShadow", "0px 0px 1px #FFF");
 		return 'mapbox.streets';
 	}
 	if (genRand <= .4 && genRand > .2) {
@@ -19,7 +22,6 @@ function randMap () {
 	}
 	else
 		return 'mapbox.satellite';
-
 }
 
 var headMap = L.mapbox.map('mapHeader', randMap(), {

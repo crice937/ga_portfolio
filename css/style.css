@@ -2,22 +2,19 @@
 /* Basic Styles */
 
 body {
-	background-color: #ECEFF1;
+	background-color: #B6B6B6;
 	font-family: 'Roboto', sans-serif;
 }
 
 #containerBg {
 	background-color: #CFD8DC;
 	width: 80%;
-}
-
-.formContainerBg {
-	margin: 5% 0 5% 15%;
-	width: 80%;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .jumbotronBg {
 	background-color: #455A64;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 #mapHeader {
@@ -25,9 +22,7 @@ body {
 	margin: 0 auto;
 	width: 80%;
 	position: relative;
-	z-index: 0;
 }
-
 
 #protein {
 	margin: 0 auto;
@@ -35,7 +30,7 @@ body {
 }
 
 #cardMargin {
-	margin-top: 5%;
+	margin: 2% 0 1% 0;
 }
 
 #removeMarginPadding {
@@ -57,8 +52,8 @@ body {
 	right: 0;
 }
 
-#mc_embed_signup {
-	
+.accentColor {
+	background-color: #FF4081 !important;
 }
 
 .info h1 {
@@ -70,7 +65,7 @@ body {
 	font-size: 64px;
 }
 
-.shadow1 {
+.shadow {
 	text-shadow: 0px 0px 1px #000;
 }
 
