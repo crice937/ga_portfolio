@@ -69,6 +69,17 @@ body {
 	text-shadow: 0px 0px 1px #000;
 }
 
+.shadowHeadline {
+	text-shadow: 0px 0px 1px #fff !important;
+	color: #000 !important;
+}
+
+.meImage {
+    height: 150px !important;
+    width: 150px !important;
+    margin-bottom: 5%;
+}
+
 /* D3 Styles */
 
 .link {

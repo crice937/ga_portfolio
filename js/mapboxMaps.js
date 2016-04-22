@@ -36,6 +36,9 @@ function randMap () {
 		return 'mapbox.pirates';
 	}
 	if (genRand <= .7 && genRand > .6) {
+		$(".jumbotronBg").css("background-color", "#90A4AE");
+		$(".info").css("color", "#263238");
+		$(".shadow").css("textShadow", "0px 0px 1px #FFF");
 		return 'mapbox.wheatpaste';
 	}
 	if (genRand <= .8 && genRand > .7) {
